@@ -5,7 +5,7 @@ app = Flask(__name__)#Cria a aplicação Flask
 
 produtos = [{"id":"0","nome":"Lapis","preço":10}]#Dados locais
 
-@app.route('/produtos_resgistrados', methods=['GET'])#Mostra todas as produtos registrados
+@app.route('/produtos_resgistrados', methods=['GET'])#Mostra todos as produtos registrados
 def get():
     return jsonify({"produtos registradas":produtos})
 
